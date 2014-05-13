@@ -190,6 +190,12 @@
 				<Item Name="IMAQ Write File 2" Type="VI" URL="/&lt;vilib&gt;/vision/Files.llb/IMAQ Write File 2"/>
 				<Item Name="WPI_DashboardSave DB Images.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardSave DB Images.vi"/>
 				<Item Name="WPI_DashboardUpdate Table Values.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Dashboard/WPI_DashboardUpdate Table Values.vi"/>
+				<Item Name="Particle Parameters" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Particle Parameters"/>
+				<Item Name="IMAQ GetImageSize" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ GetImageSize"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
+				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
+				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -198,6 +204,18 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
+			<Item Name="TargetType.ctl" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/TargetType.ctl"/>
+			<Item Name="Process Image for Target.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Process Image for Target.vi"/>
+			<Item Name="Sorted Particle Report.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Sorted Particle Report.vi"/>
+			<Item Name="Aspect Ratio Score.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Aspect Ratio Score.vi"/>
+			<Item Name="Rectangularity Score.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rectangularity Score.vi"/>
+			<Item Name="Score and Rank Target Objects.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Score and Rank Target Objects.vi"/>
+			<Item Name="Separate Particles.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Separate Particles.vi"/>
+			<Item Name="Rank HV combos.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Rank HV combos.vi"/>
+			<Item Name="Label Targets.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Label Targets.vi"/>
+			<Item Name="Compute Target Distances.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute Target Distances.vi"/>
+			<Item Name="Compute DistanceToTarget.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Compute DistanceToTarget.vi"/>
+			<Item Name="Calibration Helper.vi" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/examples/FRC/Vision/2014 Target Detection/Calibration Helper.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC PC Dashboard" Type="EXE">
@@ -234,6 +252,46 @@
 				<Property Name="TgtF_internalName" Type="Str">FRC PC Dashboard</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{AEE2EF3D-7087-47D6-AEAE-9F87F896ED5E}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Dashboard.exe</Property>
+			</Item>
+			<Item Name="Dashboard Main" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{3DB16D42-35B0-44C9-908A-001327EA84CA}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{5FE70EC8-E07E-4F9A-853D-110DCEC45D1F}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_winsec.description" Type="Str">http://www.BU.com</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{3F5BA77F-F87B-4F67-B58D-1CDFA3FC33AD}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Dashboard Main</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Dashboard Main</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{BBA48BF0-7A93-4EFC-8D98-CEC204F534FC}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Dashboard Main/Application.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Dashboard Main/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2A553955-6AB8-4992-82BE-841446723B85}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Dashboard Main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">BU</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Dashboard Main</Property>
+				<Property Name="TgtF_internalName" Type="Str">Dashboard Main</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2014 BU</Property>
+				<Property Name="TgtF_productName" Type="Str">Dashboard Main</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{739FDDA7-2C36-491F-8880-02E6FA335FD9}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
 			</Item>
 		</Item>
 	</Item>
